@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>my form</title>
+</head>
+<body>
+<form name="myform" action="#" onclick="return myform()" method="post">
+	<table border="1 px solid" rules="all" >
+   <tr>
+   	<td>Name:<input type="text" name="fname" placeholder="Username"></td>
+   </tr>
+   <tr>
+   	<td>Email:<input type="Email" name="fEmail" placeholder="E-mail"></td>
+   </tr>
+   <tr>
+   	<td>Password:<input type="Password" name="fPassword" placeholder="Password"></td>
+   </tr>
+</form>
+
+</table>
+<button onclick="return function()" type="Submit" value="submit">Submit </button>
+</body>
+<script type="text/javascript">
+	function myform{
+		var x= documet.forms["myform"]{"fname"].value;
+		if(x=="")
+		{
+			alert("name must be filled");
+		}
+		return false;
+	}
+</script>
+</html>
